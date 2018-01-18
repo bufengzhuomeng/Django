@@ -17,6 +17,6 @@ from django.urls import re_path
 from . import views
 urlpatterns = [
     #re_path('',views.hello,name='hello'),
-    re_path(r'time/(\d+)/?$', views.hours_ahead),
+    re_path(r'time/plus/(\d+)/?$', views.hours_ahead),
     re_path(r'time/',views.current_datetime),
 ]
